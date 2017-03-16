@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+}
+
+.w {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+body {
+    width: 100%;
+    font-family: "微软雅黑";
+}
+
+body header {
+    width: 100%;
+    height: 80px;
+    background: url('../images/header_top.png') no-repeat left center;
+    background-size: cover;
+    position: relative;
+}
+
+body nav {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #333333;
+}
+
+body nav .top {
+    width: 1288px;
+    margin: 0 auto;
+    height: 30px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+}
+
+body nav .top ul {
+    display: flex;
+    font-size: 14px;
+}
+
+body nav .top ul li:hover a {
+    color: #fff;
+}
+
+body nav .top ul a {
+    color: #bfbebe;
+}
+
+body nav .top ul:first-child li {
+    padding: 0 13px 0 18px;
+    line-height: 30px;
+    background: url('../images/nav01.png') no-repeat right center;
+}
+
+body nav .top ul:first-child li:first-child {
+    background: url('../images/nav03.png') no-repeat left center;
+}
+
+body nav .top ul:first-child li:first-child a {
+    color: #08b85c;
+}
+
+body nav .top ul:first-child li:first-child:hover a {
+    color: #08d79e;
+}
+
+body nav .top ul:first-child li:nth-child(2) {
+    background: url('../images/nav01.png') no-repeat left center;
+}
+
+body nav .top ul:nth-child(2) li {
+    padding: 0 16px;
+    line-height: 30px;
+    background: url('../images/nav01.png') no-repeat right center;
+}
+
+body nav .top ul:nth-child(2) li:last-child {
+    width: 82px;
+    background: url('../images/nav02.png') no-repeat right center;
+}
+
+body nav .under_user {
+    width: 82px;
+    height: 158px;
+    background: #333333;
+    position: absolute;
+    right: 315px;
+    top: 110px;
+    font-size: 14px;
+    display: none;
+}
+
+body nav .under_user li {
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+body nav .under_user li a {
+    color: #bfbebe;
+}
+
+body nav .under_user li:first-child {
+    margin-top: 5px;
+}
+
+body nav .under_user li:hover {
+    background-color: rgba(180, 186, 195, 0.81);
+}
+
+body nav .under_user li:hover a {
+    color: #fff;
+}
+
+body #under_nav {
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+body #under_nav a {
+    text-decoration: none;
+}
+
+body #under_nav .nav {
+    width: 1024px;
+    height: 54px;
+    line-height: 54px;
+    display: flex;
+    justify-content: space-between;
+}
+
+body #under_nav .nav .left {
+    width: 230px;
+    height: 54px;
+    display: flex;
+}
+
+body #under_nav .nav .left h1 {
+    font-size: 0;
+    width: 97px;
+    height: 54px;
+    background: url('../images/logo_1c5763c.png') no-repeat center center;
+}
+
+body #under_nav .nav .right {
+    width: 748px;
+    text-align: left;
+    display: flex;
+}
+
+body #under_nav .nav .right li {
+    padding-right: 35px;
+}
+
+body #under_nav .nav .right li a {
+    color: #999999;
+    display: inline-block;
+    width: 46px;
+    text-align: center;
+    height: 54px;
+}
+
+body #under_nav .nav .right li a:hover {
+    color: #000;
+    border-bottom: 2px solid #00b38a;
+}
+
+body #under_nav .nav .right li .active {
+    color: #000;
+    border-bottom: 2px solid #00b38a;
+}
+
+a {
+    text-decoration: none;
+    color: #999999;
+}
+
+li {
+    list-style: none;
+}
+
+.header-banner {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #d5f1e3;
+    background-color: #d5f1e3;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav-top {
+    height: 30px;
+    background-color: #333333;
+    padding: 0 300px;
+    font-size: 14px;
+}
+
+.nav-bottom {
+    height: 55px;
+    line-height: 55px;
+    border: 1px solid #d2d2d2;
+    background-color: #fafafa;
+    padding: 0 0 0 170px;
+}
+
+.nav-bottom img {
+    margin: 8px 0 0 0;
+    float: left;
+}
+
+.nav-bottom div {
+    float: left;
+    margin: 0 0 0 180px;
+}
+
+.nav-bottom div a {
+    display: inline-block;
+    width: 60px;
+}
+
+.content {
+    width: 1020px;
+    margin: 0 auto;
+    padding: 35px 0 0 0;
+    position: relative;
+}
+
+.content .set {
+    width: 230px;
+    height: 250px;
+    float: left;
+    margin: 0 50px 0 0;
+    background: #fafafa;
+}
+
+.set li {
+    height: 50px;
+    line-height: 50px;
+    width: 230px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.set li:first-of-type {
+    color: #999999;
+    font-size: 18px;
+}
+
+.content .information {
+    width: 740px;
+    height: 640px;
+    background: #fafafa;
+    /*float: left;*/
+    position: absolute;
+    top: 35px;
+    left: 275px;
+}
+
+.information .mine {
+    color: #555555;
+    font-size: 20px;
+    font-weight: 200;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ebebeb;
+    margin: 0 10px;
+}
+
+.information .prompt {
+    width: 585px;
+    height: 85px;
+    text-align: center;
+    line-height: 85px;
+    border-bottom: 1px dashed #ebebeb;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #9c9fba;
+}
+
+.information figure {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #9C9FBA;
+    margin: 30px auto 20px;
+}
+
+.item {
+    text-align: right;
+    width: 150px;
+}
+
+.items {
+    text-align: right;
+}
+
+.bring {
+    background-color: #fafafa;
+    width: 410px;
+    height: 40px;
+}
+
+input {
+    border: none;
+    border: 1px solid #D2D2D2;
+}
+
+.btn {
+    width: 120px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: #00b38a;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+}
+
+.woman {
+    margin: 0 0 0 40px;
+}
+
+body footer {
+    margin-top: 700px;
+    /*margin-right: 800px;*/
+    width: 100%;
+    height: 68px;
+    border-top: 1px solid #ebebeb;
+    background: url('../images/footer_final.png') no-repeat center 35px;
+}
+
+body footer .ft_section {
+    margin-top: 8px;
+    margin-left: 440px;
+    text-indent: 220px;
+    height: 24px;
+    line-height: 24px;
+    background: url('../images/footer01.png') no-repeat left center;
+}
+
+body footer .ft_section span {
+    padding-right: 15px;
+}
+
+body footer .ft_section span:first-child {
+    padding-right: 35px;
+    background: url('../images/footer_new.png') no-repeat right center;
+}
+
+body footer .ft_section span:nth-child(2) {
+    padding-left: 10px;
+}
+
+body footer .ft_section span a:hover {
+    color: #00b38a;
+}

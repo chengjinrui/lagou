@@ -1,0 +1,585 @@
+* {
+    box-sizing: border-box;
+}
+
+.w {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+body {
+    width: 100%;
+    font-size: 14px;
+    font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+    color: #333;
+}
+
+body header {
+    width: 100%;
+    height: 80px;
+    background: url('../images/header_top.png') no-repeat left center;
+    background-size: cover;
+    position: relative;
+}
+
+body nav {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #333333;
+}
+
+body nav .top {
+    width: 1288px;
+    margin: 0 auto;
+    height: 30px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+}
+
+body nav .top ul {
+    display: flex;
+    font-size: 14px;
+}
+
+body nav .top ul li:hover a {
+    color: #fff;
+}
+
+body nav .top ul a {
+    color: #bfbebe;
+}
+
+body nav .top ul:first-child li {
+    padding: 0 13px 0 18px;
+    line-height: 30px;
+    background: url('../images/nav01.png') no-repeat right center;
+}
+
+body nav .top ul:first-child li:first-child {
+    background: url('../images/nav03.png') no-repeat left center;
+}
+
+body nav .top ul:first-child li:first-child a {
+    color: #08b85c;
+}
+
+body nav .top ul:first-child li:first-child:hover a {
+    color: #08d79e;
+}
+
+body nav .top ul:first-child li:nth-child(2) {
+    background: url('../images/nav01.png') no-repeat left center;
+}
+
+body nav .top ul:nth-child(2) li {
+    padding: 0 16px;
+    line-height: 30px;
+    background: url('../images/nav01.png') no-repeat right center;
+}
+
+body nav .top ul:nth-child(2) li:last-child {
+    width: 82px;
+    background: url('../images/nav02.png') no-repeat right center;
+}
+
+body nav .under_user {
+    width: 82px;
+    height: 158px;
+    background: #333333;
+    position: absolute;
+    right: 315px;
+    top: 110px;
+    font-size: 14px;
+    display: none;
+}
+
+body nav .under_user li {
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+body nav .under_user li a {
+    color: #bfbebe;
+}
+
+body nav .under_user li:first-child {
+    margin-top: 5px;
+}
+
+body nav .under_user li:hover {
+    background-color: rgba(180, 186, 195, 0.81);
+}
+
+body nav .under_user li:hover a {
+    color: #fff;
+}
+
+body #under_nav {
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+body #under_nav a {
+    text-decoration: none;
+}
+
+body #under_nav .nav {
+    margin: auto;
+    height: 54px;
+    line-height: 54px;
+    display: flex;
+    justify-content: space-between;
+}
+
+body #under_nav .nav .left {
+    width: 230px;
+    height: 54px;
+    display: flex;
+}
+
+body #under_nav .nav .left h1 {
+    font-size: 0;
+    width: 97px;
+    height: 54px;
+    background: url('../images/logo_1c5763c.png') no-repeat center center;
+}
+
+body #under_nav .nav .right {
+    width: 748px;
+    text-align: left;
+    display: flex;
+}
+
+body #under_nav .nav .right li {
+    padding-right: 35px;
+}
+
+body #under_nav .nav .right li a {
+    color: #999999;
+    display: inline-block;
+    width: 46px;
+    text-align: center;
+    height: 54px;
+}
+
+body #under_nav .nav .right li a:hover {
+    color: #000;
+    border-bottom: 2px solid #00b38a;
+}
+
+body #under_nav .nav .right li .active {
+    color: #000;
+    border-bottom: 2px solid #00b38a;
+}
+
+.dn {
+    display: none;
+}
+
+.db {
+    display: block;
+}
+
+.border {
+    padding: 36px 0 0;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.border .contain {
+    float: left;
+    width: 700px;
+    position: relative;
+    min-height: 1500px;
+    margin-bottom: 50px;
+}
+
+.border .contain .baseInfo {
+    position: relative;
+}
+
+.border .contain .baseInfo>img {
+    position: relative;
+    z-index: 2;
+}
+
+.border .contain .baseInfo .headerpic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 6px solid #f7f7f7;
+    background: url("../img/default_headpic.png") no-repeat center center;
+    position: absolute;
+    left: 40.8%;
+    top: 38px;
+    z-index: 3;
+}
+
+.border .contain .baseInfo .headerpic:hover+.headershadow {
+    display: block;
+}
+
+.border .contain .baseInfo .headershadow {
+    width: 130px;
+    height: 130px;
+    background: url("../img/shadow_tx_a482008.png") no-repeat center center;
+    position: absolute;
+    left: 40.8%;
+    top: 38px;
+    z-index: 5;
+    display: none;
+}
+
+.border .contain .baseInfo .headershadow:hover {
+    display: block;
+}
+
+.border .contain .baseInfo .goodJobFindMe {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.border .contain .baseInfo .goodJobFindMe>p {
+    color: #68bea8;
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    width: 205px;
+    font-size: 14px;
+}
+
+.border .contain .baseInfo .goodJobFindMe>p .offI {
+    width: 53px;
+    height: 24px;
+    border-radius: 13px;
+    background: url("../img/icon-off_d3baf93.png") no-repeat left center, url('../img/block-off_d63ced4.png') no-repeat 33px center #dadbda;
+    display: block;
+    position: absolute;
+    right: 17px;
+    top: 0;
+}
+
+.border .contain .baseInfo .goodJobFindMe>p .onI {
+    width: 53px;
+    height: 24px;
+    border-radius: 13px;
+    background: url("../img/icon-on_d787cbd.png") no-repeat 28px center, url('../img/block-on_829d53f.png') no-repeat 5px center #33d233;
+    display: block;
+    position: absolute;
+    right: 17px;
+    top: 0;
+}
+
+.border .contain .baseInfo .goodJobFindMe .goodJobFindMeTips {
+    background: #fdfdde;
+    width: 252px;
+    padding: 12px 8px 14px 12px;
+    height: 80px;
+    border-radius: 5px;
+    position: absolute;
+    left: -60px;
+    bottom: -75px;
+}
+
+.border .contain .baseInfo .goodJobFindMe .goodJobFindMeTips>p {
+    font-size: 14px;
+    position: relative;
+    margin: 0;
+}
+
+.border .contain .baseInfo .goodJobFindMe .goodJobFindMeTips>p .offTip {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    cursor: pointer;
+    width: 11px;
+    height: 11px;
+    background: url("../img/icons_mr_da12dfe.png") -128px -203px no-repeat;
+}
+
+.border .contain .baseInfo .goodJobFindMe .goodJobFindMeTips .btnTip {
+    position: absolute;
+    width: 59px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #00b38a;
+    top: 45px;
+    right: 20px;
+}
+
+.border .contain .baseInfo .goodJobFindMe .goodJobFindMeTips .TipArrow {
+    position: absolute;
+    left: auto;
+    right: 32px;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    border-width: 7px;
+    border-style: dashed dashed solid;
+    top: -14px;
+    border-color: transparent transparent #fdfdde;
+}
+
+.border .contain .baseInfo .qr {
+    position: absolute;
+    top: 185px;
+    right: 10px;
+}
+
+.border .contain .baseInfo .qr>img {
+    display: block;
+    border: 11px solid #f2f2f2;
+    position: absolute;
+    right: 45px;
+    top: -50px;
+    z-index: 5;
+}
+
+.border .contain .baseInfo .qr>img:hover+.qrBig {
+    display: block;
+}
+
+.border .contain .baseInfo .qr .qrBig {
+    display: none;
+    width: 320px;
+    height: 180px;
+    background: url("../img/myresume_qr3_7e2d5c9.png") no-repeat;
+    color: #fff;
+    padding: 12px 8px 9px 5px;
+    cursor: auto;
+    z-index: 5;
+}
+
+.border .contain .baseInfo .qr .qrBig>img {
+    width: 302px;
+    height: 155px;
+}
+
+.border .contain .baseInfo .qr .qrBig:hover {
+    display: block;
+}
+
+.border .contain .baseInfo .resume {
+    position: relative;
+    line-height: 30px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.border .contain .baseInfo .resume #editor_btn {
+    width: 80px;
+    position: absolute;
+    top: 5px;
+    left: 50px;
+}
+
+.border .contain .baseInfo .resume .init_self {
+    background-color: #fafafa;
+    display: block;
+}
+
+.border .contain .baseInfo .resume .init_self .mr_name {
+    padding: 20px 0 0;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.border .contain .baseInfo .resume .init_self p span {
+    margin: 0 8px;
+}
+
+.border .contain .baseInfo .resume .init_self section {
+    margin-bottom: 26px;
+}
+
+.border .contain .baseInfo .resume .init_self section span {
+    display: inline-block;
+}
+
+.border .contain .baseInfo .resume .init_self section .mr_title {
+    font-size: 18px;
+}
+
+.border .contain .baseInfo .resume .init_self section .mr_title .mr_title_l {
+    width: 230px;
+    height: 0;
+    border: 1px solid #EDEDED;
+}
+
+.border .contain .baseInfo .resume .init_self section .mr_title .mr_title_c {
+    width: 120px;
+    height: 37;
+    line-height: 37px;
+    border-radius: 15px;
+    margin: 0 14px;
+    background-color: #EDEDED;
+}
+
+.border .contain .baseInfo .resume .init_self section .mr_title .mr_title_r {
+    width: 230px;
+    height: 0;
+    border: 1px solid #EDEDED;
+}
+
+.border .contain .baseInfo .resume .init_self section .self_mess {
+    width: 610px;
+    min-height: 160px;
+    background-color: white;
+    display: inline-block;
+    margin-top: 22px;
+}
+
+.border .contain .baseInfo .resume .init_self section:first-of-type {
+    margin-top: 50px;
+}
+
+.border .contain .baseInfo .resume #editor_self {
+    width: 700px;
+    background-color: #fafafa;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 40px 40px 0 0;
+}
+
+.border .contain .baseInfo .resume #editor_self dl {
+    margin-bottom: 10px;
+}
+
+.border .contain .baseInfo .resume #editor_self dl dt {
+    font-family: microsoft yahei;
+}
+
+.border .contain .baseInfo .resume #editor_self dl dd {
+    text-align: left;
+}
+
+.border .contain .baseInfo .resume #editor_self input[type=button] {
+    width: 80px;
+    margin: 15px 0 20px;
+}
+
+.border .contain .baseInfo .resume #editor_self input[type=button]:first-of-type {
+    margin-right: 30px;
+}
+
+.border .aside {
+    float: right;
+}
+
+.border .aside .aside_top div {
+    width: 68px;
+    height: 68px;
+    display: inline-block;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+    text-align: center;
+    padding: 40px 0 0;
+}
+
+.border .aside .aside_top div:first-of-type {
+    background: url("../img/toudi.png") no-repeat 20px 14px;
+}
+
+.border .aside .aside_top div:nth-of-type(2) {
+    background: url("../img/xin.png") no-repeat 20px 14px;
+}
+
+.border .aside .aside_top div:nth-of-type(3) {
+    background: url("../img/wujiaoxing.png") no-repeat 20px 14px;
+}
+
+.border .aside .aside_top div:nth-of-type(4) {
+    background: url("../img/dingyue.png") no-repeat 20px 14px;
+}
+
+.border .aside .aside_top div a {
+    color: black;
+}
+
+.border .aside .aside_top div a:hover {
+    text-decoration: none;
+    color: #00b88d;
+}
+
+.border .aside .aside_center {
+    padding: 20px;
+    margin-top: 19px;
+    background-color: #fafafa;
+    border: 1px solid #f2f2f2;
+}
+
+.border .aside .aside_center div #bfb {
+    color: #00b88d;
+}
+
+.border .aside .aside_center .progress {
+    margin-top: 18px;
+}
+
+.border .aside .aside_bottom ul {
+    font-family: microsoft yahei;
+    margin-top: 18px;
+    border-left: 1px solid #f2f2f2;
+    font-size: 18px;
+}
+
+.border .aside .aside_bottom ul li {
+    line-height: 60px;
+    text-align: center;
+}
+
+.border .aside .aside_bottom ul li:hover {
+    border-left: 1px solid #00b88d;
+}
+
+body footer {
+    width: 100%;
+    height: 68px;
+    border-top: 1px solid #ebebeb;
+    background: url('../images/footer_final.png') no-repeat center 35px;
+}
+
+body footer .footer_content {
+    margin-top: 8px;
+    margin-left: 440px;
+    text-indent: 220px;
+    height: 24px;
+    line-height: 24px;
+    background: url('../images/footer01.png') no-repeat left center;
+}
+
+body footer .footer_content span {
+    padding-right: 15px;
+}
+
+body footer .footer_content span:first-child {
+    padding-right: 35px;
+    background: url('../images/footer_new.png') no-repeat right center;
+}
+
+body footer .footer_content span:nth-child(2) {
+    padding-left: 10px;
+}
+
+body footer .footer_content span a:hover {
+    color: #00b38a;
+}

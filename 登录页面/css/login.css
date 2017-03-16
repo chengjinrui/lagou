@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "微软雅黑";
+}
+
+body header {
+    width: 100%;
+    height: 323px;
+    background-color: #00b38a;
+    position: relative;
+}
+
+body header h1 {
+    width: 128px;
+    height: 54px;
+    background: url('../images/h1.png') no-repeat left center;
+    position: relative;
+    left: 136px;
+    top: 70px;
+    font-size: 0;
+}
+
+body #content {
+    width: 660px;
+    height: 374px;
+    border: 1px solid #000;
+    background-color: #fff;
+    position: absolute;
+    left: 633px;
+    top: 155px;
+    display: flex;
+    justify-content: space-between;
+}
+
+body #content ul input {
+    width: 300px;
+    height: 46px;
+    line-height: 46px;
+}
+
+body #content ul input[type="text"] {
+    color: #b5b5b5;
+    text-indent: 14px;
+    outline: none;
+    background-color: #f8f8f8;
+    border: 1px solid #f8f8f8;
+    font-size: 16px;
+}
+
+body #content ul input[type="button"] {
+    color: #fff;
+    background-color: #00b38a;
+    font-size: 18px;
+}
+
+body #content ul:first-child {
+    width: 410px;
+    padding: 50px 52px 0 57px;
+}
+
+body #content ul li {
+    width: 300px;
+    height: 46px;
+    line-height: 46px;
+    margin: 10px 0;
+}
+
+body #content ul li:nth-child(3) a {
+    float: right;
+    text-align: right;
+    display: inline-block;
+    color: #00b38a;
+}
+
+body #content ul li:last-child {
+    text-align: center;
+}
+
+body #content ul li:last-child a {
+    color: #00b38a;
+    text-decoration: underline;
+}
+
+body #content ul:last-child {
+    width: 250px;
+    height: 253px;
+    border-left: 1px dashed #b5b5b5;
+    margin-top: 53px;
+}
+
+body #content ul:last-child li {
+    width: 100%;
+}
+
+body #content ul:last-child li:first-child {
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #838383;
+}
+
+body #content ul:last-child li:nth-child(2) {
+    text-align: center;
+    height: 50px;
+}
+
+body #content ul:last-child li:nth-child(2) img {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    margin: 0 5px;
+}
+
+body #content ul:last-child li:nth-child(3) {
+    text-indent: 50px;
+    height: 110px;
+    margin-top: 40px;
+}
+
+body #content ul:last-child li:nth-child(3) img {
+    display: inline-block;
+}
+
+body #content ul:last-child li:last-child {
+    height: 16px;
+    color: #777777;
+    margin-top: -20px;
+    margin-left: -20px;
+    font-size: 12px;
+}

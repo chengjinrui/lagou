@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>拉钩注册</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <header>
+        <nav class="w">
+            <h1>拉勾网</h1>
+            <ul>
+                <li><a href="#">人才拍卖</a></li>
+                <li><img src="./images/nav01.png" alt=""></li>
+                <li><a href="#">拉勾APP</a></li>
+                <li><a href="#">去登录 &gt;</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="banner">
+        <div class="contain w">
+            <div class="left">swiper搞定</div>
+            <div class="right">
+                <h2>8秒注册,查看高薪职位</h2>
+                <ul>
+                    <li>手机号码注册</li>
+                    <li>邮箱注册</li>
+                </ul>
+                <div class="line" style="left: 0px;"></div>
+                <form id="phone_form" action="#" method="" style="display:block">
+                    <ul>
+                        <li>
+                            <input type="text" name="phone" placeholder="请输入常用手机号码" id="lp_phone">
+                        </li>
+                        <li class="yzmli">
+                            <input type="text" placeholder="请证明你不是机器人" id="right_yzm" name="yzm" autocomplete="on">
+                            <div class="yzm">验证码</div>
+                            <div class="reflash"></div>
+                        </li>
+                        <li class="coderli">
+                            <input type="text" placeholder="请输入手机验证码" id="lp_coder" name="coder" autocomplete="on">
+                            <span class="getcode">获取验证码</span>
+                        </li>
+                        <li>
+                            <input type="password" placeholder="请设置密码" id="phone_password" name="password" autocomplete="off">
+                        </li>
+                    </ul>
+                    <a href="#" class="submitBtn">立即注册</a>
+                    <label for="lp_agreeNotice" class="lp_agreeNotice" checked="true"> <em style="background-position: 0px -12px;"></em>
+					      	 <input type="checkbox" name="checkbox" checked="true" class="gree" style="display: none;">我已阅读并同意<a href="http://www.lagou.com/privacy.html" target="_blank">《拉勾用户协议》</a>
+					    </label>
+                </form>
+                <div class="qqsina">
+                    <span>或使用以下帐号登录</span>
+                    <a href="/oauth20/auth_sinaWeiboProvider.html" target="_blank" class="icon_wb" title="使用新浪微博帐号登录"></a>
+                    <a href="/oauth20/auth_qqProvider.html" class="icon_qq" target="_blank" title="使用腾讯QQ帐号登录"></a>
+                    <a href="/oauth20/auth_weixinProvider.html" class="icon_weixin" target="_blank" title="使用微信帐号登录"></a>
+                </div>
+                <div class="login">
+                    <a id="lp_login" target="_blank" href="https://passport.lagou.com/login/login.html">
+                        <em></em>已有帐号，<span class="active" style="color: #00b38a;">去登录</span><img src="./images/login.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+	    	<ul class="w">
+	    		<li>
+	    			<img src="./images/icon1.png">
+	    			<div>
+	    				<p class="title">极速入职</p>
+	    				<p class="content">最快24小时拿到企业offer</p>
+	    			</div>
+	    		</li>
+	    		<li>
+	    			<img src="./images/icon2.png">
+	    			<div>
+	    				<p class="title">隐私保护</p>
+	    				<p class="content">安全私密快速投简历</p>
+	    			</div>
+	    		</li>
+	    		<li>
+	    			<img src="./images/icon3.png">
+	    			<div>
+	    				<p class="title">薪资透明</p>
+	    				<p class="content">薪资绝对透明真实谢绝面议</p>
+	    			</div>
+	    		</li>
+	    		<li class="end">
+	    			<img src="./images/icon4.png">
+	    			<div>
+	    				<p class="title">海量信息</p>
+	    				<p class="content">安全私密快速投简历</p>
+	    			</div>
+	    		</li>
+	    	</ul>
+	    </div>
+</body>
+
+</html>
