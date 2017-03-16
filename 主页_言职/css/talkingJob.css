@@ -353,7 +353,7 @@ body .main .left .item_con_pager .checked {
     font-weight: bold;
 }
 
-body .main .left .seeMore a {
+/*body .main .left .seeMore a {
     display: inline-block;
     width: 119px;
     text-align: center;
@@ -366,6 +366,12 @@ body .main .left .seeMore a {
     position: absolute;
     right: 45%;
     top: 40px;
+}*/
+
+body .main .left .talking{
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+    padding-top: 10px;
 }
 
 body .main .right {
